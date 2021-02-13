@@ -8,7 +8,96 @@
     --fontFamaily: 'Source Sans Pro', sans-serif;
     --fontSize: 16px;
 }
+/*******************
+********************
+basis styles
+********************
+*******************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: var(--fontFamaily);
     font-size: var(--fontSize);
 }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+.clearfix::after {
+    display: block;
+    content: ""; 
+    clear: both;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+.py {
+    padding: 70px 0;
+}
+/*******************
+********************
+nav
+********************
+*******************/
+nav {
+    background: var(--primary);
+    padding: 10px 70px;
+}
+nav .logo {
+    width: 250px; 
+    float: left;
+}
+nav ul {
+    float: right;
+    margin-top: 20px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 50px;
+}
+nav ul li a:hover {
+    color: var(--secondary);
+}
+/*******************
+********************
+header
+********************
+*******************/
+header img {
+    width: 100%;
+}
+/*******************
+********************
+uvod
+********************
+*******************/
+.uvod article:last-child {
+    background: var(--lightgray);
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+}
+.uvod article:last-child div {
+    padding: 0 10px;
+}
+/*******************
+********************
+footer
+********************
+*******************/
+footer {
+    background: var(--primary);
+    text-align: center;
+    color: var(--white);
+    padding: 30px 0;
+}
+
