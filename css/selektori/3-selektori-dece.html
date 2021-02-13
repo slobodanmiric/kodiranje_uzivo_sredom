@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selektori dece</title>
+    <style>
+        body {
+            font-size: 40px;
+        }
+        article > p {
+            color: red;
+        }
+        p > span {
+            color: blue;
+        }
+        .lista > li {
+            border: 2px dashed red;
+        }
+        .lista ul li {
+            background: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Selektori dece</h3>
+        <article>
+            <p>Prvi <span>paragraf</span></p>
+            <p>Drugi paragraf</p>
+            <p>Treci paragraf</p>
+        </article>
+        <span>Ja sam spanic izvan artikla</span>
+        <p>ja sam paragraf izvan artikla</p>
+    </section>
+    
+    <ul class="lista">
+        <li>Dete 1</li>
+        <li>Dete 2</li>
+        <ul>
+            <li>Dete 3 unutar nove UL</li>
+        </ul>
+    </ul>
+</body>
+</html>
