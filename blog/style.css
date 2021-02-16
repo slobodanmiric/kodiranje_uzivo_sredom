@@ -37,6 +37,32 @@ h1, h2, h3, h4, h5, h6 {
 .py {
     padding: 70px 0;
 }
+.headers {
+    background: var(--secondary);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.clearfix {
+    clear: both;
+    content: ""; 
+    display: block;
+}
+.button {
+    background: var(--secondary);
+    border: 0;
+    font-size: 16px;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: var(--primary);
+    text-decoration: none;
+    display: inline-block;
+}
+.button:hover {
+    background: var(--primary);
+    color: var(--white);
+}
 /*******************
 ********************
 nav
@@ -100,4 +126,58 @@ footer {
     color: var(--white);
     padding: 30px 0;
 }
+/*******************
+********************
+blog
+********************
+*******************/
+main section {
+    float: left;
+    width: 70%;
+}
+main section img {
+    width: 100%;
+}
+main aside {
+    float: right;
+    width: 25%;
+    padding: 30px;
+    background: var(--primary);
+    color: var(--white);
+}
+main aside ul {
+    list-style: none;
+}
+main aside a {
+    color: var(--white);
+    line-height: 1.5;
+}
+main aside a:hover {
+    color: var(--secondary);
+}
+main aside hr {
+    margin: 20px 0;
+}
+main aside h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+.post {
+    background: var(--lightgray);
+    margin-bottom: 30px;
+}
+.post .text {
+    padding: 30px;
+}
+.post .text h2 {
+    color: var(--secondary);
+    font-size: 40px;
+    text-shadow: 0 0 5px var(--primary);
+}
+.post .text p {
+    padding: 10px 0 20px 0;
+}
+
+
 
