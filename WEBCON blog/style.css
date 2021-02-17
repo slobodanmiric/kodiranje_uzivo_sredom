@@ -44,11 +44,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
     letter-spacing: 2px;
 }
-.clearfix::after {
-    clear: both;
-    content: ""; 
-    display: block;
-}
 .button {
     background: var(--secondary);
     border: 0;
