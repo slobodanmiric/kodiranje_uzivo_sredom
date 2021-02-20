@@ -126,3 +126,44 @@ hgroup h4 span {
 .first article button {
 	margin-top: 30px;
 }
+/***********
+team
+************/
+.team {
+    background: var(--blue);
+    padding: 80px 0;
+    text-align: center;
+}
+.team h2 {
+    color: var(--white);
+    font-size: 3rem;
+}
+.team h2 + p {
+    color: var(--lightGray);
+}
+.team article {
+    float: left;
+    width: 25%;
+    margin-top: 50px;
+}
+.team article .wrap {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 40px;
+    margin: 0 20px;
+}
+.team article .wrap img {
+    border-radius: 50%;
+}
+.team article:first-child .wrap {
+    margin-left: 0;
+} 
+.team article:last-child .wrap {
+    margin-right: 0;
+}
+.team article .wrap h3 {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.team article .wrap h5 {
+    color: var(--lightGray);
+} 
