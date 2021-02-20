@@ -1,28 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap");
 :root {
-    --fontFamily: 'Raleway', sans-serif;
-    --fontSize: 16px;
-    --blue: #5283bf;
-    --darkenBlue: #6692c8;
-    --white: #fff;
-    --gray: #9b9b9b;
-    --transition: .4s ease;
+	--fontFamily: "Raleway", sans-serif;
+	--fontSize: 16px;
+	--blue: #5283bf;
+	--white: #ffffff;
+	--gray: #9b9b9b;
+	--darkenBlue: #6692c8;
+	--lightGray: #b4c0c9;
+	--transition: 0.4s ease;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-    font-family: var(--fontFamily);
-    font-size: var(--fontSize);
-    letter-spacing: 2px;
-    color: var(--gray);
-    line-height: 2;
+	font-family: var(--fontFamily);
+	font-size: var(--fontSize);
+	letter-spacing: 2px;
+	color: var(--gray);
+	line-height: 2;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 100;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 100;
 }
 .container {
-    max-width: 1140px;
+	max-width: 1140px;
+	/* border: 1px solid white; */
+	margin: 0 auto;
+}
+.container::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+/* HEADER */
+header {
+	background-image: url(img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	border-top: 15px solid var(--blue);
+}
+nav {
+	padding: 50px 0;
+}
+nav .logo {
+	float: left;
+}
+nav ul {
+	float: right;
+}
+nav a:hover {
+	color: var(--gray);
+	transition: var(--transition);
+	transform: scale(1.15);
+	display: block;
+}
+nav ul li {
+	float: left;
+	margin: 0 30px;
+}
+nav ul li:last-child {
+	margin-right: 0;
+}
+hgroup {
+	text-align: center;
+	padding: 50px 0 150px 0px;
+}
+hgroup h1 {
+	font-size: 4rem;
+	color: var(--white);
+}
+hgroup h4 {
+	font-size: 1.3rem;
+	color: var(--lightGray);
+}
+hgroup h4 span {
+	text-transform: uppercase;
 }
