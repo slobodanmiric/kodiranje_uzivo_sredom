@@ -31,7 +31,6 @@ h6 {
 }
 .container {
 	max-width: 1140px;
-	/* border: 1px solid white; */
 	margin: 0 auto;
 }
 .container::after {
@@ -45,6 +44,18 @@ a {
 }
 ul {
 	list-style: none;
+}
+button {
+	padding: 10px 15px;
+	background: var(--blue);
+	border: none;
+	color: var(--white);
+	cursor: pointer;
+	font-size: 1rem;
+	transition: var(--transition);
+}
+button:hover {
+	background: var(--darkenBlue);
 }
 /* HEADER */
 header {
@@ -90,4 +101,28 @@ hgroup h4 {
 }
 hgroup h4 span {
 	text-transform: uppercase;
+}
+/* first */
+.first {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 80px 0;
+}
+.first article:nth-child(1) {
+	border-right: 1px solid var(--gray);
+	padding: 0 40px;
+}
+.first article:nth-child(2) {
+	border-right: 1px solid var(--gray);
+	padding: 0 40px;
+}
+.first article:nth-child(3) {
+	padding: 0 40px;
+}
+.first article h2 {
+	color: var(--blue);
+}
+.first article button {
+	margin-top: 30px;
 }
