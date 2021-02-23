@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+    color: #3a3a3c;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.clearfix {
+    clear: both;
+}
+/************
+header
+************/
+.mainHeader {
+    background-image:url(img/header.jpg);
+    background-size: cover;
+    height: 700px;
+}
+.logo img {
+    width: 15%;
+    float: left;
+}
+.mainHeader ul {
+    float: right;
+}
+.mainHeader hgroup {
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 150px;
+}
+.mainHeader h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.mainHeader ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f3703e;
+    cursor: pointer;
+    text-align: center;
+    margin: 30px 40px 0 0;
+}
+.mainHeader ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+/************
+main
+************/
+.main {
+    width: 70%;
+    margin: 70px auto;
+}
+.main h2 {
+    text-align: center;
+    text-decoration: underline overline;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+.main p {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    border: 12px dashed #3a3a3c;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+/************
+footer
+************/
+footer {
+    background: #f3703e;
+    text-align: center;
+    padding: 60px 0;
+    font-size: 1.8rem;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: #3a3a3c;
+}
+
+
+
+
+
+
+
+
