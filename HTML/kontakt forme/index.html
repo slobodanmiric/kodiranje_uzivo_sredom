@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt forme</title>
+</head>
+<body>
+    
+    <section>
+        <h1 style="color: red;">Formular za interakciju sa klijentima</h1>
+        <h3 style="color: blue;">Kontaktirajte nas za dodatne informacije ili odaberite pakete usluga</h3>
+        <hr>
+        <form>
+            <h3>Izaberite opcije koje vam nudimo</h3>
+            <input type="checkbox"> Front end development <br>
+            <input type="checkbox"> Back end development <br>
+            <input type="checkbox"> CMS (WordPress, Drupal, Joomla) <br>
+            <input type="checkbox"> Internet marketing <br>
+            <hr>
+            <h3>Koje paket usluge koja Vam treba</h3>
+            <input type="radio" name="usluge"> Graficki dizaj eizajn i marketing <br>
+            <input type="radio" name="usluge"> Web development i marketing <br>
+            <input type="radio" name="usluge"> Samo marketing <br>
+            <hr>
+            <h3>Koliki je budzet sa kojim raspolazete</h3>
+            <select>
+                <option value="500">500 - 1000$</option>
+                <option value="1000">1000 - 3000$</option>
+                <option value="5000">3000 - 5000$</option>
+                <option value="10000">5000 - 10000$</option>
+            </select>
+            <h3>Datum (dead line) do koga je potrebno uraditi projekat</h3>
+            <input type="date">
+            <h3>Posaljite neke dodatne napomene o projektu</h3>
+            <textarea cols="70" rows="10" placeholder="Dodatne napomene u vezi projekta"></textarea>
+            <hr>
+            <h2 style="color: red;">U nasoj ponudi imamo i audio i video produkciju</h2>
+            <hr>
+            <h3>Video koji povlacimo iz samog projekta</h3>
+            <video src="video/Guitarist.mp4" controls></video>
+            <h3>Video koji embedujemo sa interneta</h3>
+            <iframe width="100%" height="280" src="https://www.youtube.com/embed/lt5-_RCb34Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <hr>
+            <h3>Nasi audio radovi</h3>
+            <audio src="audio/sinobusi%20-%20%C4%8Camac%20na%20Tisi.mp3" controls></audio>
+            <hr>
+            <h3>Za dalju komunikaciju unesite vase podatke</h3>
+            Ime: <input type="text" placeholder="Unesite ime"> <br><br>
+            Prezime: <input type="text" placeholder="Unesite prezime"> <br><br>
+            Email: <input type="email" placeholder="Unesite email"> <br><br>
+            Telefon: <input type="phone" placeholder="Unesite telefon"> <br><br>
+            <input type="submit" value="Posaljite poruku">
+            <button type="button">Ovo je obican button</button>
+        </form>
+    </section>
+    
+</body>
+</html>
