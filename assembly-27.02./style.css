@@ -150,3 +150,27 @@ footer ul {
 footer ul li a:hover {
 	background: none;
 }
+/* RESPONSIVE */@media (max-width: 768px) {
+	.container {
+		width: 90%;
+	}
+	nav .logo {
+		flex: 0 0 100%;
+		margin-bottom: 20px;
+	}
+	nav ul {
+		flex: 0 0 100%;
+	}
+	nav ul li a {
+		padding: 10px 15px;
+	}
+	header hgroup {
+		margin: 100px 0;
+	}
+	header hgroup h1 {
+		font-size: 3rem;
+	}
+	header hgroup p {
+		font-size: 1.4rem;
+	}
+}
