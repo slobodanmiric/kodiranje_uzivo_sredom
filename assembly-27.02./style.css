@@ -1,27 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 :root {
-    --primary: #181818;
-    --secondary: #2651a8;
-    --white: #fff;
-    --gray: #585858;
-    --lightGray: #a2a2a2;
-    --fontFamily: 'Didact Gothic', sans-serif;
-    --fontSize: 16px;
-    --transition: .4s ease;
-    --padding: 80px 0;
+	--primary: #181818;
+	--secondary: #2651a8;
+	--white: #fff;
+	--gray: #585858;
+	--lightGray: #a2a2a2;
+	--fontFamily: "Didact Gothic", sans-serif;
+	--fontSize: 16px;
+	--transition: 0.4s ease;
+	--padding: 80px 0;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-    font-family: var(--fontFamily);
-    font-size: var(--fontSize);
-    line-height: 1.5;
-    color: var(--primary);
+	font-family: var(--fontFamily);
+	font-size: var(--fontSize);
+	line-height: 1.5;
+	color: var(--primary);
 }
-
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: var(--white);
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.btn {
+	padding: 15px 30px;
+	font-size: 1.2rem;
+	background-color: var(--secondary);
+	color: var(--white);
+	border: none;
+	border-radius: 5px;
+	transition: var(--transition);
+}
+.btn:hover {
+	background-color: var(--white);
+	color: var(--secondary);
+}/* HEADER */
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(img/header.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: var(--padding);
+	text-align: center;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 0 0 30%;
+}
+ul li a {
+	font-size: 1.25rem;
+	padding: 15px 25px;
+	transition: var(--transition);
+}
+ul li a:hover {
+	background-color: var(--secondary);
+}
+.logo {
+	font-size: 2rem;
+}
+hgroup {
+	margin: 200px 0;
+}
+hgroup h1 {
+	font-size: 4rem;
+	color: var(--white);
+}
+hgroup p {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 2rem;
+}hgroup .btn {
+	margin: 30px 0 50px 0;
+}
 
 
 
