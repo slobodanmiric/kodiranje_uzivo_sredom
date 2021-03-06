@@ -1,0 +1,1 @@
+alert('JS radi iz externog fajla');
