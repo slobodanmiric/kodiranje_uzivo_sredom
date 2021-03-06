@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Objekti</h1>
+    <hr>
+    <script>
+        var instructor = {
+            ime: 'Sloba',
+            godine: 43,
+            posao: 'Developer/ Designer / Predavac',
+            porodica: ['Tamara', 'Jovana', 'Marko', 'Frida'],
+            adresa: {
+                ulica: 'Kozacinskog',
+                broj: 5
+            }
+        }
+        instructor.hobi = 'Ukulele';
+        console.log(instructor.ime);
+        console.log(instructor.ime + " ima " + instructor.godine + " godine i radi kao " + instructor.posao);
+        console.log(instructor.ime + ' se trenunto najvise druzi sa psom koji se zove ' + instructor.porodica[3]);
+        console.log(instructor.ime + ' zivi u ulici  ' + instructor.adresa.ulica + ' na broju ' +  instructor.adresa.broj);
+        console.log(instructor.ime + ' u slobodno vreme voli da svira ' + instructor.hobi);
+    </script>
+</body>
+</html>
