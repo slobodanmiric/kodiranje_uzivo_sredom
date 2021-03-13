@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        .omotac {
+            background: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>innerHTML</h1>
+    <div class="omotac">
+        
+    </div>
+    <script>
+        var omotac = document.querySelector('.omotac');
+        omotac.innerHTML = '<h2>Novi h2 naslov</h2>';
+        omotac.innerHTML += '<p>Ja sam novi paragraf</p>';
+        omotac.innerHTML += '<p>Ja sam drugi p</p>';
+
+        //omotac.innerText += '<h2>Neki tekst</h2>';
+    </script>
+</body>
+</html>

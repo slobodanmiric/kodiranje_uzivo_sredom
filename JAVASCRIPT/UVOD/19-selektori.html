@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Selektori</h1>
+    <hr>
+    <ul>
+        <li>getElementByID</li>
+        <li>getElementsByTagName</li>
+        <li>getElementByClassName</li>
+        <li>getElementByName</li>
+        <li>querySelector</li>
+        <li>querySelectorAll</li>
+    </ul>
+    <hr>
+    <div id="primer1">getElementByID</div>
+    <button class="btn">Posaljite poruku</button>
+    <form>
+        <input type="text" name="forma">
+    </form>
+    <script>
+        var primer1 = document.getElementById('primer1');
+        console.log(primer1);
+
+        var naslov = document.getElementsByTagName('h1');
+        console.log(naslov);
+
+        var klasa = document.getElementsByClassName('btn');
+        console.log(klasa);
+
+        var forma = document.getElementsByName('forma');
+        console.log(forma);
+
+        var lista = document.querySelectorAll('li');
+        console.log(lista);
+
+        var li = document.querySelector('li');
+        console.log(li);
+    </script>
+</body>
+</html>
