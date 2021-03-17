@@ -5,16 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jquery</title>
+    <style>
+        .css {
+            background: aqua;
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 50px;
+        }
+        .radius {
+            border-radius: 50px;
+        }
+    </style>
 </head>
 <body>
     <h1>CSS manipulacija</h1>
     <hr>
-    <div class="css">CSS</div>
-    <div class="jquert">JQUERY</div>
+    <div class="css radius">CSS</div>
+    <div class="jquery">JQUERY</div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
-        
+        // $('.jquery').css('background', 'aqua');
+        // $('.jquery').css('border', '1px solid black');
+        // $('.jquery').css('width', '200px');
+        // $('.jquery').css('height', '200px');
+        // $('.jquery').css('lineHeight', '200px');
+        // $('.jquery').css('text-align', 'center');
+        // $('.jquery').css('fontSize', '50px');
+        $('.jquery').css({
+            'background': 'aqua',
+            'border': '1px solid black',
+            'width': '200px',
+            'height': '200px',
+            'lineHeight': '200px',
+            'text-align': 'center',
+            'fontSize': '50px'
+        }).addClass('radius');
     </script>
 </body>
 </html>
