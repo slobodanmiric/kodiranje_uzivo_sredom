@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <h1>Selektori</h1>
+    <hr>
+    <h2>Ja sam h2 naslov</h2>
+    <p class="lead">ja sam nabudzen paragraf</p>
+    <div id="container">
+        <h3>Ja sam h3 naslov</h3>
+        <p>Ja sam paragraf unutar diva</p>
+    </div>
+    <div>
+        <h4>Ja sam h4 naslov</h4>
+        <ul>
+            <li>Clan liste 1</li>
+            <li>Clan liste 2</li>
+            <li>Clan liste 3</li>
+            <li>Clan liste 4</li>
+        </ul>
+    </div>
+    <p>&copy design by webcon</p>
+    <script src="jquery.js"></script>
+    <script>
+        // $('h1, h2, h3, h4').css('color', 'red');
+        // $('h1, h2, h3, h4').css('background', 'black');
+        // $('h1, h2, h3, h4').css('textAlign', 'center');
+        $('h1, h2, h3, h4').css({
+            'color': 'red',
+            'background': 'black',
+            'textAlign': 'center',
+            'padding': '10px'
+        });
+        $('#container').css('border', '5px solid green');
+        $('.lead').css('background', 'lightgreen');
+        $('li:first').css('font-size', '3em');
+        $('li:last').css('font-size', '3em');
+        $('li:odd').css('background', 'lightblue');
+        $('li:even').css('background', 'yellow');
+        $('div > p').css('border', '5px solid orange');
+        $('p:contains("webcon")').css('background', 'orange');
+    </script>
+</body>
+</html>

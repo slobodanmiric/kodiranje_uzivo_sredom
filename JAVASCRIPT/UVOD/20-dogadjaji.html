@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        button {
+            background: red;;
+            padding: 20px 40px;
+            color: white;
+            font-size: 20px;
+            border: 5px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dogadjaji - Events</h1>
+    <hr>
+    <button onclick="alert('Kliknuli smo kad vec zelis')">Klikni meeeeeee</button>
+    <button onclick="jsEvent()">Klikni</button>
+    <script>
+        function jsEvent() {
+            alert('Kliknuli smo i drugo dugme');
+        }
+        var dugme = document.getElementsByTagName('button')[0];
+        dugme.onclick = function() {
+            alert('Ovo je svakako bolji nacini da se klikne');
+        }
+
+        dugme.addEventListener('click', function() {
+            alert('Ovo je treci i sigurno najbolji nacin za kliktanje');
+        })
+
+        dugme.addEventListener('click', jsEvent);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #box {
+            height: 200px;
+            width: 200px;
+            background: lightblue;
+            margin: 20px auto;
+            line-height: 200px;
+            font-size: 40px;
+        }
+        .poluKrug {
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            background: orangered;
+            margin: 20px auto;
+            border-top-left-radius: 200px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sintaksa</h1>
+    <p>Ja sam prvi paragraf</p>
+    <div id="box">BOX</div>
+    <div class="poluKrug">PK</div>
+    <button>Ja sam dugme</button>
+    <script src="jquery.js"></script>
+    <script>
+        //$('#box').hide(2000);
+        // $('.poluKrug').hide(2000);
+        // $('.poluKrug').fadeOut(5000);
+        $('h1').css('color', 'red');
+        $('button').click(function() {
+            $('.poluKrug').fadeOut(3000);
+        });
+    </script>
+</body>
+</html>
