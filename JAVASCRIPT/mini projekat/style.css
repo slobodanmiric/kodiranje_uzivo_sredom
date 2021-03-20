@@ -1,16 +1,28 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
 :root {
     --primary: #6b58ff;
     --accents: #01fdfe;
     --white: #fff;
+    --black: #000;
     --fontSize: 16px;
-
+    --fontFamily: 'Source Sans Pro', sans-serif;
 }
+/**************
+basic styles
+**************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    line-height: 1.5;
+}
+/**************
+header
+**************/
 header {
     background-image: url(img/header.jpg);
     height: 70vh;
@@ -24,4 +36,22 @@ h1 {
     position: absolute;
     top: 22%;
     left: 20%;
+}
+/**************
+footer
+**************/
+footer {
+    background-image: url(img/footer.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer p {
+    color: var(--white);
+    font-size: 1.3rem;
+    text-shadow: 0 0 2px var(--black);
 }
