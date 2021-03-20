@@ -6,7 +6,7 @@ var phpViewImg = document.querySelector('#phpViewImg');
 var wpViewImg = document.querySelector('#wpViewImg');
 
 function showJsView() {
-    jsView.style.display = "block";
+    jsView.style.display = 'block';
     phpView.style.display = 'none';
     wpView.style.display = 'none';
     jsViewImg.style.display = 'block';
@@ -14,7 +14,7 @@ function showJsView() {
     wpViewImg.style.display = 'none';
 }
 function showPhpView() {
-    jsView.style.display = "none";
+    jsView.style.display = 'none';
     phpView.style.display = 'block';
     wpView.style.display = 'none';
     jsViewImg.style.display = 'none';
@@ -22,7 +22,7 @@ function showPhpView() {
     wpViewImg.style.display = 'none';
 }
 function showWpView() {
-    jsView.style.display = "none";
+    jsView.style.display = 'none';
     phpView.style.display = 'none';
     wpView.style.display = 'block';
     jsViewImg.style.display = 'none';
