@@ -128,3 +128,6 @@ tabovi
 .prikazi button:hover {
     background: linear-gradient(245deg, var(--primary), var(--accents));
 }
+#phpView, #phpViewImg, #wpView, #wpViewImg {
+    display: none;
+}
