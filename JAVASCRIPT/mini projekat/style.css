@@ -78,6 +78,7 @@ tabovi
     text-decoration: none;
     width: 300px;
     display: inline-block;
+    cursor: pointer;
 }
 .linkovi a:hover {
     color: var(--accents);
